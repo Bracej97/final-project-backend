@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-wc^w=6i7*n!dwt3&!4isfacooqua*+5$h-xb$n!j=y$kw7s0e6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '.pythonanywhere.com', 'mysite-bweo.onrender.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '.pythonanywhere.com', 'mysite-fr3d.onrender.com']
 
 
 # Application definition
