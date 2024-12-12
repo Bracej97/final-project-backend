@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 class Event(models.Model):
     event_name = models.CharField(max_length=100)
     event_description = models.CharField(max_length=500)
-    event_in_future = models.BooleanField(default=True) #Is the event in the future or is it a past event
+    event_in_future = models.BooleanField(default=True)
     start_datetime = models.DateTimeField()
     end_datetime = models.DateTimeField()
     event_attendees = models.ManyToManyField(User)
@@ -16,3 +16,8 @@ class Event(models.Model):
 
     def __str__(self):
         return f'{self.event_name}'
+
+class FAQ(models.Model):
+    question = models.CharField(max_length=500)
+    answer = models.CharField(max_length=1000)
+    
