@@ -9,7 +9,7 @@ class Event(models.Model):
     start_datetime = models.DateTimeField()
     end_datetime = models.DateTimeField()
     event_attendees = models.ManyToManyField(User)
-    event_locations = models.CharField(max_length=300)
+    event_location = models.CharField(max_length=300)
     created_user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='created_events')
     updated_time = models.DateTimeField(auto_now=True)
     updated_user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='updated_events')
@@ -20,4 +20,6 @@ class Event(models.Model):
 class FAQ(models.Model):
     question = models.CharField(max_length=500)
     answer = models.CharField(max_length=1000)
-    
+
+    def __str__(self):
+        return f'{self.question}'
