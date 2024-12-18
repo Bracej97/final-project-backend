@@ -7,12 +7,9 @@ class EventSerializer(serializers.ModelSerializer):
         fields = [
             'event_name',
             'event_description',
-            'event_in_future',
-            'start_datetime',
-            'end_datetime',
+            'event_date',
+            'event_start',
+            'event_end',
             'event_attendees',
-            'event_location',
-            'created_user',
-            'updated_time',
-            'updated_user'
+            'event_location'
             ]
