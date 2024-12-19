@@ -105,7 +105,6 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated',  # Default for all views
     ),
     'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework.authentication.SessionAuthentication',
         'rest_framework.authentication.BasicAuthentication'
     ),
 }
