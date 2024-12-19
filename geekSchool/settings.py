@@ -92,7 +92,7 @@ WSGI_APPLICATION = 'geekSchool.wsgi.application'
 DATABASES = {
     'default': dj_database_url.config(
         # Replace this value with your local database's connection string.
-        default='postgresql://postgres:postgres@http://localhost:8000//geekSchool',
+        default='postgresql://mysite:kc7tMbEsdsJIuy0OBOvjISi3TTKrN8vu@dpg-cthk9t9opnds73a50qb0-a.oregon-postgres.render.com/mysite_sqke',
         conn_max_age=600
     )
 }
